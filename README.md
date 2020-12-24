@@ -23,7 +23,7 @@ So get your resume ready for Discord, paste the code, and hit enter. Now you hav
 Run `index.js` with an additional argument of the image you want. The available image names can be found in `images.json`.
 
 You can add your own images to `images.json` following the following format:
-```json
+```js
 {
   "your-image-name": {
     "url": "your-image-url",
