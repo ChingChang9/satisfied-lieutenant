@@ -1,0 +1,139 @@
+body {
+  background: url($URL);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.theme-dark .appMount-3lHmkl {
+  background: rgba(0, 0, 0, $SHADOW);
+}
+.theme-light .appMount-3lHmkl {
+  background: rgba(255, 255, 255, $SHADOW);
+}
+.theme-dark, .theme-light {
+  --background-primary: transparent;
+  --background-secondary: transparent;
+  --background-tertiary: transparent;
+  --background-accent: transparent;
+  --background-floating: rgba(0, 0, 0, .8);
+  --activity-card-background: transparent;
+  --deprecated-panel-background: transparent;
+}
+/* VOICE STATE (BOTTOME LEFT) */
+.panels-j1Uci_, .theme-dark .container-1D34oG, .theme-light .container-1D34oG {
+  background-color: transparent;
+}
+/* VIDEO CALL */
+.wrapper-2qzCYF.minimum-28Z35l {
+  height: 215px;
+  background-color: rgba(54, 57, 63, 0.5);
+}
+/* "JUMP TO PRESENT" BAR */
+.jumpToPresentBar-G1R9s6 {
+  background-color: #7289da;
+  border-radius: 8px;
+}
+/* CODE BLOCK */
+.theme-dark .markup-2BOw-j code {
+  background-color: #35383e;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+.theme-dark .markup-2BOw-j code.inline {
+  padding: 0.165em 0.2em;
+}
+/* SERVER BAR & CHANNEL BAR */
+.guilds-1SWlCJ, .sidebar-2K8pFh, .container-1giJp5 {
+  border-right: 1px solid rgba(255, 255, 255, .06);
+}
+/* SERVER LIST */
+.tree-3tCaw8 {
+  outline-width: 0;
+}
+/* USER PROFILE & VOICE STATE */
+.container-1giJp5, .headerWrapper-3NUKsd, .panels-j1Uci_ {
+  border-top: 1px solid var(--background-modifier-accent);
+}
+/* -------------------------- PROFILE TAB -------------------------- */
+/* SPOTIFY FIX */
+.headerSpotify-zpWxgT, .headerPlaying-j0WQBV, .headerStreaming-2FjmGz {
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, .4);
+  margin-bottom: 10px;
+}
+.headerSpotify-zpWxgT {
+  background-color: rgba(79, 170, 101, .36);
+}
+/* "PLAYING A GAME" */
+.headerPlaying-j0WQBV, .headerStreaming-2FjmGz {
+  background: rgba(79, 100, 170, .36);
+}
+/* BACKGROUND */
+.userPopout-3XzG_A {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url($URL);
+  padding: 20px 10px 0;
+  background-position: center top;
+  background-size: cover;
+  background-color: #000000;
+}
+.theme-light .userPopout-3XzG_A {
+  background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .2)), url($URL);
+}
+/* HEADER & NOTES & ROLE GIVER TAB */
+.theme-dark .headerNormal-T_seeN, .theme-dark .body-3iLsc4, .theme-dark .container-3XJ8ns {
+  border-radius: 15px;
+  background-color: rgba(40, 40, 40, .4);
+  border: 1px solid rgba(0, 0, 0, .4);
+}
+.theme-light .headerNormal-T_seeN, .theme-light .body-3iLsc4, .theme-light .container-3XJ8ns {
+  border-radius: 15px;
+  background-color: rgba(210, 210, 210, .5);
+  border: 1px solid rgba(0, 0, 0, .4);
+}
+/* HEADER */
+.theme-dark .headerNormal-T_seeN, .theme-light .headerNormal-T_seeN {
+  margin-bottom: 10px;
+}
+/* NOTES */
+.theme-dark .body-3iLsc4, .theme-light .body-3iLsc4 {
+  padding: 16px 0 0 16px;
+}
+/* FOOTER & BODY */
+.theme-dark .footer-1fjuF6, .theme-dark .bodyInner-245q0L, .theme-light .footer-1fjuF6, .theme-light .bodyInner-245q0L {
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 8px 0;
+}
+/* -------------------------- END PROFILE TAB -------------------------- */
+/* CHAT MESSAGE BAR */
+.scrollableContainer-2NUZem {
+  border: 1px solid white;
+  border-radius: 22px;
+  background-color: rgba(54, 57, 63, 0.6);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, .4);
+  transition-duration: 0.18s;
+}
+.scrollableContainer-2NUZem:focus-within {
+  border: 1px solid #7289da;
+}
+.theme-light .scrollableContainer-2NUZem {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+/* ROLE GIVER TAB */
+.theme-dark .container-3XJ8ns, .theme-light .container-3XJ8ns {
+  border-radius: 15px;
+  background-color: rgba(40, 40, 40, .8);
+}
+/* GIF & EMOJI SEARCH BAR */
+.inner-2P4tQO, .searchBar-5di9mG {
+  border: 1px solid #7289da;
+  border-radius: 17px;
+}
+/* MENTION HIGHLIGHT */
+.mentioned-xhSam7 {
+  background-color: rgba(250, 166, 26, 0.085);
+}
+/* REMOVAL */
+.protip-YaFfgO, .inspector-S2gM3e, #private-channels-1, .nowPlayingColumn-2sl4cE, .buttons-3JBrkn button[aria-label="Send a gift"] {
+  display: none;
+}
