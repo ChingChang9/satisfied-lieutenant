@@ -124,6 +124,11 @@ body {
   border-radius: 15px;
   background-color: rgba(40, 40, 40, .8);
 }
+/* ROLE GIVER TAB IN SERVER SETTINGS */
+.theme-dark .card-FDVird:before, .theme-light .card-FDVird:before {
+  background-color: transparent;
+  border-color: transparent;
+}
 /* GIF & EMOJI SEARCH BAR */
 .inner-2P4tQO, .searchBar-5di9mG {
   border: 1px solid #7289da;

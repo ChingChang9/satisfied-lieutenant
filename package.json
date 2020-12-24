@@ -1,11 +1,11 @@
 {
   "name": "satisfied-lieutenant",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "What shall I say? Where is satisfaction?",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChingChang9/satisfied-lieutenant.git"
+    "url": "https://github.com/ChingChang9/satisfied-lieutenant.git"
   },
   "keywords": [
     "discord",
@@ -13,9 +13,17 @@
     "wallpaper"
   ],
   "author": "Ching Chang",
+  "contributors": [
+    {
+      "name": "Ching Chang",
+      "email": "chingtheprogrammer@gmail.com",
+      "url": "https://chingchang.dev"
+    }
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChingChang9/satisfied-lieutenant/issues"
+    "url": "https://github.com/ChingChang9/satisfied-lieutenant/issues",
+    "email": "chingtheprogrammer@gmail.com"
   },
   "homepage": "https://github.com/ChingChang9/satisfied-lieutenant#readme"
 }
