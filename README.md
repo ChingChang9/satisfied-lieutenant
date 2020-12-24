@@ -21,7 +21,7 @@ Now you need to paste the code in Discord's console, which can be opened by pres
 You might also see this warning:
 ![Discord console warning](./examples/warning.jpg)
 
-So get your resume ready for Discord, paste the code, and hit enter. Now you have an awesome theme to share with your friends! (Or Wumpus, if you don't have friends).
+So get your resume ready for Discord, paste the code, and hit enter. Now you have an awesome theme to share with your friends! (Or Wumpus, if you don't have friends)
 
 ## How to use?
 Run `index.js` with an additional argument of the image you want. The available image names can be found in `images.json`.
