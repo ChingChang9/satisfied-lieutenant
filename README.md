@@ -1,6 +1,10 @@
 # Satisfied Lieutenant
 Customize Discord with your favourite wallpaper and spice up _your place to talk_ with a minimalistic material design!
 
+Example 1 | Example 2
+-|-
+![Discord Hayasaka Theme](./examples/hayasaka.jpg) | ![Discord Deku Study Theme](./examples/deku-study.jpg)
+
 ## Usage
 ```bash
 git clone https://github.com/ChingChang9/satisfied-lieutenant.git
