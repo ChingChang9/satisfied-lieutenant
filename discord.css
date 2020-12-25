@@ -54,6 +54,11 @@ body {
 .container-1giJp5, .headerWrapper-3NUKsd, .panels-j1Uci_ {
   border-top: 1px solid var(--background-modifier-accent);
 }
+/* PINNED MESSAGES AND INBOX */
+.messagesPopoutWrap-1MQ1bW, .container-enaOkj {
+  background-color: rgba(54, 57, 63, 0.92);
+  border-radius: 15px;
+}
 /* -------------------------- PROFILE TAB -------------------------- */
 /* SPOTIFY FIX */
 .headerSpotify-zpWxgT, .headerPlaying-j0WQBV, .headerStreaming-2FjmGz {
