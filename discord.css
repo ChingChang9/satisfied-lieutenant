@@ -15,9 +15,21 @@ body {
   --background-secondary: transparent;
   --background-tertiary: transparent;
   --background-accent: transparent;
-  --background-floating: rgba(0, 0, 0, .8);
   --activity-card-background: transparent;
   --deprecated-panel-background: transparent;
+}
+.theme-dark {
+  --background-floating: rgba(0, 0, 0, .8);
+}
+.theme-light {
+  --background-floating: rgba(255, 255, 255, .9);
+}
+/* TOP LEFT DISCORD HOME ICON AND PROFILE TAB */
+.theme-dark .childWrapper-anI2G9 {
+  background-color: #35383e;
+}
+.theme-light .childWrapper-anI2G9, .theme-light .body-3ND3kc, .theme-light .topSectionNormal-2-vo2m {
+  background-color: #e8eef8;
 }
 /* VOICE STATE (BOTTOME LEFT) */
 .panels-j1Uci_, .theme-dark .container-1D34oG, .theme-light .container-1D34oG {
@@ -55,8 +67,12 @@ body {
   border-top: 1px solid var(--background-modifier-accent);
 }
 /* PINNED MESSAGES AND INBOX */
-.messagesPopoutWrap-1MQ1bW, .container-enaOkj {
+.theme-dark .messagesPopoutWrap-1MQ1bW, .container-enaOkj {
   background-color: rgba(54, 57, 63, 0.92);
+  border-radius: 15px;
+}
+.theme-light .messagesPopoutWrap-1MQ1bW, .container-enaOkj {
+  background-color: rgba(232, 238, 248, 0.8);
   border-radius: 15px;
 }
 /* -------------------------- PROFILE TAB -------------------------- */
@@ -111,11 +127,18 @@ body {
 }
 /* -------------------------- END PROFILE TAB -------------------------- */
 /* CHAT MESSAGE BAR */
-.scrollableContainer-2NUZem {
+.theme-dark .scrollableContainer-2NUZem {
   border: 1px solid white;
   border-radius: 22px;
   background-color: rgba(54, 57, 63, 0.6);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, .4);
+  transition-duration: 0.18s;
+}
+.theme-light .scrollableContainer-2NUZem {
+  border: 1px solid white;
+  border-radius: 22px;
+  background-color: rgba(54, 57, 63, 0.6);
+  box-shadow: 0 0 2px 1px rgba(190, 190, 190, .4);
   transition-duration: 0.18s;
 }
 .scrollableContainer-2NUZem:focus-within {

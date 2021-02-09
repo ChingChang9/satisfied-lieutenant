@@ -37,7 +37,7 @@ You can add your own images to `images.json` following the following format:
 ```
 `your-image-name`: The name you will reference when running `index.js`. \
 `your-image-url`: The link of your image. Due to Discord's Content Security Policy, only links under certain domains can be used. If you want to use your own image, the easiest way is to upload it to Discord and copy the image link. \
-`value`: How much to darken your image on a scale from 0 (no shadow) to 1 (completely black) so that texts are easier to read. Unlike `your-image-name` and `your-image-url`, don't surround this value with `"`s.
+`value`: How much to darken your image on a scale from 0 (no shadow) to 1 (completely black) so the texts are easier to read. Unlike `your-image-name` and `your-image-url`, don't surround this value with `"`s.
 
 ## Credits
 Inspired by [Ctrl W's Clean Discord](https://userstyles.org/styles/175290/clean-discord). \
