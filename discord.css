@@ -147,11 +147,6 @@ body {
 .theme-light .scrollableContainer-2NUZem {
   background-color: rgba(255, 255, 255, 0.25);
 }
-/* ROLE GIVER TAB */
-.theme-dark .container-3XJ8ns, .theme-light .container-3XJ8ns {
-  border-radius: 15px;
-  background-color: rgba(40, 40, 40, .8);
-}
 /* ROLE GIVER TAB IN SERVER SETTINGS */
 .theme-dark .card-FDVird:before, .theme-light .card-FDVird:before {
   background-color: transparent;

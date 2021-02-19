@@ -5,7 +5,7 @@ const image = process.argv[2] || "hayasaka";
 Promise.all([
   readFromFile("./discord.css"),
   readFromFile("./images.json")
-]).then((result) => {
+]).then(result => {
   const css = result[0].toString();
   const images = JSON.parse(result[1]);
 
@@ -18,18 +18,20 @@ Promise.all([
 
   fs.writeFileSync("./background", compressed);
   proc.stdin.write(compressed); proc.stdin.end();
+}).catch(error => {
+  process.stdout.write("Unknown wallpaper\n");
+  process.exit();
 });
 
 function minify(code) {
-  return code.replace(/\/\*(.|\n)*?\*\//g, "") // Remove comments
-    .replace(/\s*(\{|\}|\[|\]|\(|\)|\:|\;|\,)\s*/g, "$1") // Remove commas and brackets
-    .replace(/#([\da-fA-F])\1([\da-fA-F])\2([\da-fA-F])\3/g, "#$1$2$3") // hexcode to 3-hex
-    .replace(/ [\+\-]?0(rem|em|ec|ex|px|pc|pt|vh|vw|vmin|vmax|%|mm|cm|in|)/g, " 0")
-    .replace(/:[\+\-]?0(rem|em|ec|ex|px|pc|pt|vh|vw|vmin|vmax|%|mm|cm|in|)/g, ":0")
-    .replace(/0\./g, ".") // Remove frontal 0
-    .replace(/\n/g, "") // Remove new lines
-    .replace(/;\}/g, "}") // Remove ; on last line
-    .replace(/^\s+|\s+$/g, ""); // Remove spaces
+  return code.replace(/\/\*(.|\n)*?\*\//g, "") // comments
+    .replace(/\s*(\{|\}|\[|\]|\(|\)|\:|\;|\,)\s*/g, "$1") // spaces around commas, brackets, and colons
+    .replace(/#([\da-fA-F])\1([\da-fA-F])\2([\da-fA-F])\3/g, "#$1$2$3") // hexcodes to 3-hex
+    .replace(/( |:)[\+\-]?0(rem|em|ec|ex|px|pc|pt|vh|vw|vmin|vmax|%|mm|cm|in|s)/g, "$10") // remove unit for 0s
+    .replace(/( |:)0\.(\d+)/g, "$1.$2") // frontal 0s
+    .replace(/\n/g, "") // new lines
+    .replace(/;\}/g, "}") // ;s on last line
+    .replace(/^\s+|\s+$/g, ""); // spaces
 }
 
 function readFromFile(file) {

@@ -30,5 +30,13 @@
   "kaho": {
     "url": "https://cdn.discordapp.com/attachments/436012664003624970/803441651829702656/wallpaperflare.com_wallpaper_6.jpg",
     "shadow": 0.4
+  },
+  "toga": {
+    "url": "https://cdn.discordapp.com/attachments/436012664003624970/812120710134628393/rp9adkbcr7i61.png",
+    "shadow": 0.5
+  },
+  "rain-night": {
+    "url": "https://cdn.discordapp.com/attachments/701314270448582666/812101793713881088/81471534_p0.jpg",
+    "shadow": 0.6
   }
 }
