@@ -1,9 +1,9 @@
 # Satisfied Lieutenant
 Customize Discord with your favourite wallpaper and spice up _your place to talk_ with a minimalistic material design!
 
-Example 1 | Example 2
--|-
-![Discord Hayasaka Theme](./examples/hayasaka.jpg) | ![Discord Deku Study Theme](./examples/deku-study.jpg)
+Example 1 | Example 2 | Example 3 (Light mode)
+-|-|-
+![Discord Hayasaka Theme](./examples/hayasaka.jpg) | ![Discord Deku Study Theme](./examples/deku-study.jpg) | ![Discord Kaho Light Theme](./examples/kaho.jpg)
 
 ## Usage
 ```bash
