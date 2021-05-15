@@ -10,12 +10,15 @@ Example 1 | Example 2 | Example 3 (Light mode)
 git clone https://github.com/ChingChang9/satisfied-lieutenant.git
 cd satisfied-lieutenant
 
+# To list the available wallpapers
+node .
+
 # To get the mirio wallpaper
 node . mirio
 ```
 This will generate the code to style up your Discord in your clipboard so you can paste it in Discord's console right away. You can also find this code in `background` so you don't need to run this every time to get the code :D
 
-Now you need to paste the code in Discord's console, which can be opened by pressing `cmd` + `opt` + `I` on Mac or `ctrl` + `shift` + `C` on Windows. You should see something similar to this:
+Now you need to paste the code in Discord's console, which can be opened by pressing `cmd` + `opt` + `I` on Mac or `ctrl` + `shift` + `I` on Windows. You should see something similar to this:
 ![Chrome Developer Console](./examples/console.jpg)
 
 You might also see this warning:

@@ -1,27 +1,49 @@
 const fs = require("fs");
 const proc = require("child_process").spawn("pbcopy");
-const image = process.argv[2] || "hayasaka";
+const image = process.argv[2];
 
-Promise.all([
-  readFromFile("./discord.css"),
-  readFromFile("./images.json")
-]).then(result => {
-  const css = result[0].toString();
-  const images = JSON.parse(result[1]);
+if (!image) {
+  readFromFile("./images.json").then(data => {
+    printColumns(JSON.parse(data));
+    process.exit();
+  });
+} else {
+  Promise.all([
+    readFromFile("./discord.css"),
+    readFromFile("./images.json")
+  ]).then(result => {
+    const css = result[0].toString();
+    const images = JSON.parse(result[1]);
 
-  const code = css.replace(/\$URL/g, images[image].url)
+    const code = css.replace(/\$URL/g, images[image].url)
     .replace(/\$SHADOW/g, images[image].shadow);
 
-  const compressed = `a=document.createElement("style"),b=document.createTextNode('${
-    minify(code)
-  }');a.appendChild(b),document.head.appendChild(a)`;
+    const compressed = `a=document.createElement("style"),b=document.createTextNode('${
+      minify(code)
+    }');a.appendChild(b),document.head.appendChild(a)`;
 
-  fs.writeFileSync("./background", compressed);
-  proc.stdin.write(compressed); proc.stdin.end();
-}).catch(error => {
-  process.stdout.write("Unknown wallpaper\n");
-  process.exit();
-});
+    fs.writeFileSync("./background", compressed);
+    proc.stdin.write(compressed); proc.stdin.end();
+  }).catch(error => {
+    process.stdout.write("Unknown wallpaper\n");
+    process.exit();
+  });
+}
+
+
+function printColumns(object) {
+  let counter = 1;
+  for (const key in object) {
+    process.stdout.write(key);
+    if (counter % 3) {
+      process.stdout.write(" ".repeat(15 - key.length));
+    } else {
+      process.stdout.write("\n");
+    }
+    counter++;
+  }
+  process.stdout.write("\n");
+}
 
 function minify(code) {
   return code.replace(/\/\*(.|\n)*?\*\//g, "") // comments
@@ -36,6 +58,9 @@ function minify(code) {
 
 function readFromFile(file) {
   return new Promise((resolve, reject) => {
-    fs.readFile(file, (error, data) => resolve(data));
+    fs.readFile(file, (error, data) => {
+      if (error) reject(error);
+      resolve(data);
+    });
   });
 }

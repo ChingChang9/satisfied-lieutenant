@@ -36,7 +36,11 @@
     "shadow": 0.5
   },
   "rain-night": {
-    "url": "https://cdn.discordapp.com/attachments/701314270448582666/812101793713881088/81471534_p0.jpg",
+    "url": "https://cdn.discordapp.com/attachments/436012664003624970/812101431351574569/81471534_p0.jpg",
     "shadow": 0.6
+  },
+  "homura": {
+      "url": "https://cdn.discordapp.com/attachments/436012664003624970/841922525751279626/wallpaperflare.com_wallpaper-2.jpg",
+      "shadow": 0.5
   }
 }
