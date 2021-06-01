@@ -11,9 +11,9 @@ if (!image) {
   Promise.all([
     readFromFile("./discord.css"),
     readFromFile("./images.json")
-  ]).then(result => {
-    const css = result[0].toString();
-    const images = JSON.parse(result[1]);
+  ]).then(results => {
+    const css = results[0].toString();
+    const images = JSON.parse(results[1]);
 
     const code = css.replace(/\$URL/g, images[image].url)
     .replace(/\$SHADOW/g, images[image].shadow);
@@ -26,7 +26,7 @@ if (!image) {
     proc.stdin.write(compressed); proc.stdin.end();
   }).catch(error => {
     process.stdout.write("Unknown wallpaper\n");
-    process.exit();
+    process.exit(1);
   });
 }
 

@@ -98,9 +98,14 @@ body {
   background: rgba(79, 100, 170, .36);
 }
 /* BACKGROUND */
+.headerNormal-1l1Znk {
+	background-color: transparent;
+}
+.theme-light .headerTop-2yV6H {
+	background-color: rgba(255, 255, 255, $SHADOW);
+}
 .userPopout-3XzG_A {
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url($URL);
-  padding: 20px 10px 0;
   background-position: center top;
   background-size: cover;
   background-color: #000000;
@@ -108,30 +113,35 @@ body {
 .theme-light .userPopout-3XzG_A {
   background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .2)), url($URL);
 }
-/* HEADER & NOTES & ROLE GIVER TAB */
-.theme-dark .headerNormal-T_seeN, .theme-dark .body-3iLsc4, .theme-dark .container-3XJ8ns {
-  border-radius: 15px;
-  background-color: rgba(40, 40, 40, .4);
-  border: 1px solid rgba(0, 0, 0, .4);
-}
-.theme-light .headerNormal-T_seeN, .theme-light .body-3iLsc4, .theme-light .container-3XJ8ns {
-  border-radius: 15px;
-  background-color: rgba(210, 210, 210, .5);
-  border: 1px solid rgba(0, 0, 0, .4);
-}
 /* HEADER */
 .theme-dark .headerNormal-T_seeN, .theme-light .headerNormal-T_seeN {
   margin-bottom: 10px;
 }
-/* NOTES */
-.theme-dark .body-3iLsc4, .theme-light .body-3iLsc4 {
-  padding: 16px 0 0 16px;
+.theme-dark .headerTop-2y3V6H {
+	background-color: rgba(0, 0, 0, $SHADOW);
 }
-/* FOOTER & BODY */
-.theme-dark .footer-1fjuF6, .theme-dark .bodyInner-245q0L, .theme-light .footer-1fjuF6, .theme-light .bodyInner-245q0L {
-  border-radius: 15px;
-  background-color: transparent;
-  padding: 8px 0;
+.theme-light .headerTop-2y3V6H {
+	background-color: rgba(255, 255, 255, $SHADOW);
+}
+/* ADD NOTES */
+.body-3iLsc4, .activityUserPopout-2yItg2.activity-fViXj7.newPopoutActivityStyles {
+	padding-bottom: 0;
+	background-color: rgba(0, 0, 0, $SHADOW);
+}
+.theme-light .body-3iLsc4, .theme-light .activityUserPopout-2yItg2.activity-fViXj7.newPopoutActivityStyles {
+	background-color: rgba(255, 255, 255, $SHADOW);
+}
+.note-3HfJZ5 textarea, .inputDefault-_djjkz.input-cIJ7To.input-2_SIlA {
+	border: 1px solid #777777;
+	outline-width: 0;
+}
+/* MESSAGE BOX */
+.footer-1fjuF6 {
+	padding: 10px 12px;
+	background-color: rgba(0, 0, 0, $SHADOW);
+}
+.theme-light .footer-1fjuF6 {
+	background-color: rgba(255, 255, 255, $SHADOW);
 }
 /* -------------------------- END PROFILE TAB -------------------------- */
 /* CHAT MESSAGE BAR */
@@ -174,6 +184,6 @@ body {
   background-color: rgba(250, 166, 26, 0.085);
 }
 /* REMOVAL */
-.protip-YaFfgO, .inspector-S2gM3e, #private-channels-2, .nowPlayingColumn-2sl4cE, .buttons-3JBrkn button[aria-label="Send a gift"] {
+.protip-YaFfgO, .inspector-S2gM3e, #private-channels-0, #private-channels-2, .nowPlayingColumn-2sl4cE, .buttons-3JBrkn button[aria-label="Send a gift"] {
   display: none;
 }
