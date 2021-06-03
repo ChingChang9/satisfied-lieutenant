@@ -56,8 +56,17 @@ body {
   border-radius: 5px;
 }
 /* SERVER BAR & CHANNEL BAR */
-.guilds-1SWlCJ, .sidebar-2K8pFh, .container-1giJp5 {
+.theme-dark .guilds-1SWlCJ, .theme-dark .sidebar-2K8pFh {
   border-right: 1px solid rgba(255, 255, 255, .06);
+}
+.theme-light .guilds-1SWlCJ, .theme-light .sidebar-2K8pFh {
+  border-right: 1px solid rgba(0, 0, 0, .06);
+}
+.guilds-1SWlCJ {
+	width: 71px;
+}
+.sidebar-2K8pFh {
+	width: 239px;
 }
 /* SERVER LIST */
 .tree-3tCaw8 {
@@ -184,6 +193,6 @@ body {
   background-color: rgba(250, 166, 26, 0.085);
 }
 /* REMOVAL */
-.protip-YaFfgO, .inspector-S2gM3e, #private-channels-0, #private-channels-2, .nowPlayingColumn-2sl4cE, .buttons-3JBrkn button[aria-label="Send a gift"] {
+.protip-YaFfgO, .inspector-S2gM3e, #private-channels-0, #private-channels-2, .nowPlayingColumn-2sl4cE, .buttons-3JBrkn button[aria-label="Send a gift"], #user-settings-cog-My_Account, #user-settings-cog-Privacy___Safety, #user-settings-cog-Authorized_Apps, #user-settings-cog-Connections, #user-settings-cog-Discord_Nitro, #user-settings-cog-Nitro_Server_Boost, #user-settings-cog-Library_Inventory, #user-settings-cog-Billing, #user-settings-cog-Appearance--system, .separator-2I32lJ[role="separator"], #user-settings-cog-Appearance--compact-mode, #user-settings-cog-Text___Images, #user-settings-cog-Voice___Video--input, #user-settings-cog-Voice___Video--output, #user-settings-cog-Accessibility, #user-settings-cog-Notifications, #user-settings-cog-Keybinds, #user-settings-cog-Language, #user-settings-cog-Streamer_Mode, #user-settings-cog-Advanced, #user-settings-cog-Game_Activity, #user-settings-cog-changelog, #user-settings-cog-Hypesquad_Online, .wrapper-3_530D[role="group"], #message-add-reaction, #message-pin, #message-reply, #message-actions-tts, #user-context-user-profile, #user-context-mention, #user-context-message-user, #user-context-call, #user-context-note, #user-context-invite-to-server, #user-context-add-friend, #user-context-remove-friend, #user-context-block, #message-tts, #guild-context-hide-muted-channels, #guild-context-guild-settings, #guild-context-notifications, #guild-context-privacy, #guild-context-change-nickname, #guild-context-create-channel, #guild-context-create-category {
   display: none;
 }
