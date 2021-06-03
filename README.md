@@ -19,10 +19,10 @@ node . mirio
 This will generate the code to style up your Discord in your clipboard so you can paste it in Discord's console right away. You can also find this code in `background` so you don't need to run this every time to get the code :D
 
 Now you need to paste the code in Discord's console, which can be opened by pressing `cmd` + `opt` + `I` on Mac or `ctrl` + `shift` + `I` on Windows. You should see something similar to this:
-![Chrome Developer Console](./examples/console.jpg)
+<kbd>![Chrome Developer Console](./examples/console.jpg)</kbd>
 
 You might also see this warning:
-![Discord console warning](./examples/warning.jpg)
+<kbd>![Discord console warning](./examples/warning.jpg)</kbd>
 
 So get your resume ready for Discord, paste the code, and hit enter. Now you have an awesome theme to share with your friends! (Or Wumpus, if you don't have friends)
 
