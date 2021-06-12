@@ -16,7 +16,7 @@ if (!image) {
     const images = JSON.parse(results[1]);
 
     const code = css.replace(/\$URL/g, images[image].url)
-    .replace(/\$SHADOW/g, images[image].shadow);
+      .replace(/\$SHADOW/g, images[image].shadow);
 
     const compressed = `a=document.createElement("style"),b=document.createTextNode('${
       minify(code)

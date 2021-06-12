@@ -191,6 +191,13 @@ body {
   border: 1px solid #7289da;
   border-radius: 17px;
 }
+/* EMOJI, CLEAR AFTER, AND ONLINE STATUS FROM THE STATUS POPUP, AND GIF & EMOJI HEADER */
+.theme-dark .emojiPicker-3PwZFl, .theme-dark .popout-VcNcHB, .theme-dark .drawerSizingWrapper-17Mss4 {
+	background: rgba(0, 0, 0, .8);
+}
+.theme-light .emojiPicker-3PwZFl, .theme-light .popout-VcNcHB, .theme-light .drawerSizingWrapper-17Mss4 {
+	background: rgba(255, 255, 255, .9);
+}
 /* GIF PICKER BACKGROUND */
 .theme-light .container-3ISnnM {
   background-color: transparent;
